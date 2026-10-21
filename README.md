@@ -1,4 +1,4 @@
-# Трубицин Тимофей, ЛА4
+<img width="465" height="219" alt="image" src="https://github.com/user-attachments/assets/769fe4eb-b3ba-47cb-bd39-9bec651e009f" /># Трубицин Тимофей, ЛА4
 
 # Лабораторная работа №2
 
@@ -32,15 +32,15 @@
 
 ### Тестирование
 
-<img width="250" height="315" alt="image" src="https://github.com/user-attachments/assets/9f8269c7-dd26-4b7f-8914-5ef815862782" />
-<img width="274" height="103" alt="image" src="https://github.com/user-attachments/assets/bc7cc825-8b4c-432d-9400-dda7bdca1fec" />
-<img width="264" height="138" alt="image" src="https://github.com/user-attachments/assets/7ddba9c9-0c9f-43dc-a048-360a4c8bed5e" />
-<img width="267" height="102" alt="image" src="https://github.com/user-attachments/assets/69c9aabd-b296-40b7-b889-cff7b70904c9" />
-<img width="271" height="134" alt="image" src="https://github.com/user-attachments/assets/561942e0-3a0b-46a5-9c92-cee97b492827" />
-<img width="278" height="165" alt="image" src="https://github.com/user-attachments/assets/141b1655-3e03-4446-b318-6a5a51b25e0f" />
-<img width="301" height="127" alt="image" src="https://github.com/user-attachments/assets/282678cf-765d-4fcd-969c-a2e8f96895bb" />
-<img width="440" height="102" alt="image" src="https://github.com/user-attachments/assets/f9f3b94c-46ba-4f6f-82bc-a1b3983637a2" />
-<img width="299" height="104" alt="image" src="https://github.com/user-attachments/assets/d3411579-f1b5-4906-9681-63ac13986273" />
+<img width="280" height="315" alt="image" src="https://github.com/user-attachments/assets/887270ca-863c-4a03-841c-f8d17f1df91d" />
+<img width="283" height="168" alt="image" src="https://github.com/user-attachments/assets/a5178a32-1bd0-4410-813a-028e3955012e" />
+<img width="270" height="109" alt="image" src="https://github.com/user-attachments/assets/426aae79-2fcb-40ef-935e-f431e4b4de78" />
+<img width="290" height="168" alt="image" src="https://github.com/user-attachments/assets/f7deb9ef-e0eb-4f62-a645-439cb8b1ea43" />
+<img width="272" height="141" alt="image" src="https://github.com/user-attachments/assets/6dedc514-0ccf-42f9-8741-dc9a21f75ad7" />
+<img width="291" height="172" alt="image" src="https://github.com/user-attachments/assets/7fa89c93-6783-4110-b664-ab8ad7b10d62" />
+<img width="271" height="154" alt="image" src="https://github.com/user-attachments/assets/986291cc-e596-4a09-b08c-51f51a8b32f7" />
+<img width="294" height="173" alt="image" src="https://github.com/user-attachments/assets/a2134ca3-9337-4872-b973-db43def95304" />
+<img width="449" height="137" alt="image" src="https://github.com/user-attachments/assets/1d493fa1-f4d9-43df-80d9-237b6cf8fda3" />
 
 ## Задача 2
 
@@ -66,11 +66,11 @@
 
 ### Тестирование
 
-<img width="273" height="105" alt="image" src="https://github.com/user-attachments/assets/e2a5bc83-5c0c-4ffc-83a2-734842453218" />
-<img width="282" height="128" alt="image" src="https://github.com/user-attachments/assets/ab4be622-51f0-4264-b662-3f858ab01cc6" />
-<img width="275" height="124" alt="image" src="https://github.com/user-attachments/assets/4b5b4cf3-67fc-454a-b7f4-119491a84243" />
-<img width="270" height="124" alt="image" src="https://github.com/user-attachments/assets/9ae9beb2-a257-4004-8146-779c94584abb" />
-<img width="433" height="275" alt="image" src="https://github.com/user-attachments/assets/694eb6a1-7fd6-4a3d-b135-c5390211f77f" />
+<img width="284" height="111" alt="image" src="https://github.com/user-attachments/assets/ecf6729d-e3d1-4b94-b459-eac3c1c29915" />
+<img width="267" height="123" alt="image" src="https://github.com/user-attachments/assets/5ef17ef4-397e-4fc5-b7f4-9b5ee88a990b" />
+<img width="273" height="121" alt="image" src="https://github.com/user-attachments/assets/4d3a0149-3c75-4575-a8bf-4a43020ba205" />
+<img width="264" height="157" alt="image" src="https://github.com/user-attachments/assets/b73050d0-1647-4325-8b95-3c176a6efd0d" />
+<img width="441" height="298" alt="image" src="https://github.com/user-attachments/assets/10566eea-8854-40ad-9923-fde51350ae98" />
 
 # Задание 2
 
@@ -96,13 +96,13 @@
 2. Создать класс `Employee24` с полями для имени и отдела (тип `Department24`)
 3. В методе `Employee24.ToString()` проверить условие: `Dept.Boss == this`
 4. Если true, вернуть строку: `Name + " начальник отдела " + Dept.Name`
-5. Если false, вернуть строку: `Name + " работает в отделе " + Dept.Name + ", начальник которого " + Dept.Boss.Name`
-
+5. Если false, проверить, назначен ли начальник (Dept.Boss != null). Если назначен, взять его имя, иначе использовать слово "нет". Вернуть строку:
+   `Name + " работает в отделе " + Dept.Name + ", начальник которого " + имя_начальника`
 ### Тестирование
 
-<img width="475" height="141" alt="image" src="https://github.com/user-attachments/assets/1289d8ae-4159-449e-b37f-780c4c9741a4" />
-<img width="396" height="319" alt="image" src="https://github.com/user-attachments/assets/5b3cf112-57d7-4990-beaa-d6db4aabc18e" />
-<img width="379" height="374" alt="image" src="https://github.com/user-attachments/assets/316ac8da-a776-41c9-93e6-f663bbefdfc2" />
+<img width="444" height="115" alt="image" src="https://github.com/user-attachments/assets/01d0766c-1dca-4cf5-b01c-a286f5361c42" />
+<img width="457" height="251" alt="image" src="https://github.com/user-attachments/assets/595292b8-fbe8-4ed6-aa3f-b4602691b882" />
+<img width="441" height="380" alt="image" src="https://github.com/user-attachments/assets/ea0b0889-caa7-4d4a-b868-343309187455" />
 
 # Задание 3
 
@@ -123,9 +123,9 @@
 
 ### Тестирование
 
-<img width="258" height="160" alt="image" src="https://github.com/user-attachments/assets/cf638b6a-2a77-4ff9-99d7-5f4f99b8ef4c" />
-<img width="256" height="375" alt="image" src="https://github.com/user-attachments/assets/9dc5b21c-cde4-4162-8a15-8a937f86fb62" />
-<img width="431" height="408" alt="image" src="https://github.com/user-attachments/assets/85c8b0b4-f0d7-4017-8210-6a94c0a1b211" />
+<img width="203" height="123" alt="image" src="https://github.com/user-attachments/assets/8c2d457f-9b25-4cb5-8efe-425c7c1234e8" />
+<img width="264" height="342" alt="image" src="https://github.com/user-attachments/assets/bb9dd20b-c6af-4637-9aa3-b7f04e7d7a0b" />
+
 
 # Задание 4
 
@@ -153,12 +153,12 @@
 
 ### Тестирование
 
-<img width="297" height="126" alt="image" src="https://github.com/user-attachments/assets/6432ee13-e61d-4e7e-bb1d-8e9ac4960f0b" />
-<img width="273" height="168" alt="image" src="https://github.com/user-attachments/assets/351eee17-e32a-4b9b-91c3-eb7ccb2a1cac" />
-<img width="295" height="138" alt="image" src="https://github.com/user-attachments/assets/c230f213-817a-4d3a-b601-0378658dd030" />
-<img width="273" height="175" alt="image" src="https://github.com/user-attachments/assets/d1195d16-4cae-4ca8-a16e-e98ffc6173a0" />
-<img width="278" height="174" alt="image" src="https://github.com/user-attachments/assets/0282f765-2085-4074-a980-562089bf3321" />
-<img width="432" height="140" alt="image" src="https://github.com/user-attachments/assets/e56f1c01-64ee-4fa4-b78f-046747b86b4a" />
+<img width="278" height="125" alt="image" src="https://github.com/user-attachments/assets/eda3bb0c-4f48-4561-9b7b-a2a730320356" />
+<img width="272" height="171" alt="image" src="https://github.com/user-attachments/assets/99db46e7-9c32-4a9c-a61f-a2326b3bb704" />
+<img width="276" height="168" alt="image" src="https://github.com/user-attachments/assets/119c607c-cf2a-46a2-96f2-29da01e6656f" />
+<img width="276" height="170" alt="image" src="https://github.com/user-attachments/assets/7893b619-4360-4b59-a594-aa7369a63f8d" />
+<img width="280" height="170" alt="image" src="https://github.com/user-attachments/assets/848565c8-3e54-4cf3-b3a3-19dc444a392e" />
+<img width="443" height="137" alt="image" src="https://github.com/user-attachments/assets/e03d17a7-ebcb-4fb2-a4e3-002fedd31f37" />
 
 # Задание 5
 
@@ -187,7 +187,7 @@
 
 ### Тестирование
 
-<img width="200" height="140" alt="image" src="https://github.com/user-attachments/assets/77326dfe-38b5-46e6-b0c8-4e623c216b17" />
-<img width="245" height="238" alt="image" src="https://github.com/user-attachments/assets/65ad448f-dfec-49f8-80f2-229976ae3e1c" />
-<img width="311" height="395" alt="image" src="https://github.com/user-attachments/assets/2eb527e7-7827-49f5-918d-32d0f4867957" />
-
+<img width="236" height="132" alt="image" src="https://github.com/user-attachments/assets/6e4c00fa-3340-4839-a683-9483073d6e4d" />
+<img width="276" height="240" alt="image" src="https://github.com/user-attachments/assets/c279f717-8940-4006-ac38-7983f1654dcd" />
+<img width="271" height="248" alt="image" src="https://github.com/user-attachments/assets/d21596fa-08d9-4eae-8106-fba1fa87e717" />
+<img width="313" height="199" alt="image" src="https://github.com/user-attachments/assets/d05ccfd4-ea79-4752-980d-f93f3140bbb7" />
