@@ -1,4 +1,4 @@
-<img width="465" height="219" alt="image" src="https://github.com/user-attachments/assets/769fe4eb-b3ba-47cb-bd39-9bec651e009f" /># Трубицин Тимофей, ЛА4
+# Трубицин Тимофей, ЛА4
 
 # Лабораторная работа №2
 
