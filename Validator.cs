@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Validator
 {
@@ -115,19 +115,15 @@ class Validator
         return s;
     }
 
-    private bool IsLettersOnly(string s)
+    public static bool IsLettersOnly(string s)
     {
         bool hasLetter = false;
         foreach (char c in s)
         {
             if (char.IsLetter(c))
-            {
                 hasLetter = true;
-            }
             else if (c != ' ' && c != '-')
-            {
                 return false;
-            }
         }
         return hasLetter;
     }
