@@ -1,59 +1,92 @@
-﻿using System;
+using System;
 
 internal class Name45
 {
-    string? surname;
-    string? firstName;
-    string? patronymic;
+    private string? _surname;
+    private string? _firstName;
+    private string? _patronymic;
+
+    public Name45(string? firstName)
+    {
+        FirstName = firstName;
+    }
+
+    public Name45(string? firstName, string? surname)
+    {
+        FirstName = firstName;
+        Surname = surname;
+    }
+
+    public Name45(
+        string? firstName,
+        string? surname,
+        string? patronymic)
+    {
+        FirstName = firstName;
+        Surname = surname;
+        Patronymic = patronymic;
+    }
 
     public string? Surname
     {
-        get { return surname; }
-        set { surname = value; }
+        get { return _surname; }
+        set
+        {
+            if (value == null ||
+                Validator.IsLettersOnly(value))
+            {
+                _surname = value;
+            }
+            else
+            {
+                throw new ArgumentException("Только буквы");
+            }
+        }
     }
 
     public string? FirstName
     {
-        get { return firstName; }
-        set { firstName = value; }
+        get { return _firstName; }
+        set
+        {
+            if (value == null ||
+                Validator.IsLettersOnly(value))
+            {
+                _firstName = value;
+            }
+            else
+            {
+                throw new ArgumentException("Только буквы");
+            }
+        }
     }
 
     public string? Patronymic
     {
-        get { return patronymic; }
-        set { patronymic = value; }
-    }
-
-    public Name45(string firstName)
-    {
-        this.firstName = firstName;
-    }
-
-    public Name45(string firstName, string surname)
-    {
-        this.firstName = firstName;
-        this.surname = surname;
-    }
-
-    public Name45(string firstName, string surname,
-        string patronymic)
-    {
-        this.firstName = firstName;
-        this.surname = surname;
-        this.patronymic = patronymic;
+        get { return _patronymic; }
+        set
+        {
+            if (value == null ||
+                Validator.IsLettersOnly(value))
+            {
+                _patronymic = value;
+            }
+            else
+            {
+                throw new ArgumentException("Только буквы");
+            }
+        }
     }
 
     public override string ToString()
     {
         string result = "";
-
-        if (!string.IsNullOrWhiteSpace(firstName))
-            result += firstName + " ";
-        if (!string.IsNullOrWhiteSpace(patronymic))
-            result += patronymic + " ";
-        if (!string.IsNullOrWhiteSpace(surname))
-            result += surname;
-
+        if (!string.IsNullOrWhiteSpace(_firstName))
+            result += _firstName + " ";
+        if (!string.IsNullOrWhiteSpace(_patronymic))
+            result += _patronymic + " ";
+        if (!string.IsNullOrWhiteSpace(_surname))
+            result += _surname;
         return result.Trim();
     }
 }
