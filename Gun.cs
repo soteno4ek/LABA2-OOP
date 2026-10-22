@@ -1,21 +1,29 @@
-﻿internal class Gun
-{
-    int ammo;
+using System;
 
-    public int Ammo
-    {
-        get { return ammo; }
-        set { ammo = value; }
-    }
+internal class Gun
+{
+    private int _ammo;
 
     public Gun()
     {
-        ammo = 5;
+        Ammo = 5;
     }
 
     public Gun(int ammo)
     {
         Ammo = ammo;
+    }
+
+    public int Ammo
+    {
+        get { return _ammo; }
+        set
+        {
+            if (value >= 0)
+                _ammo = value;
+            else
+                throw new ArgumentException("Патроны < 0");
+        }
     }
 
     public void Shoot()
@@ -25,7 +33,6 @@
             Console.WriteLine("Бах!");
             Ammo = Ammo - 1;
         }
-
         else
         {
             Console.WriteLine("Клац!");
