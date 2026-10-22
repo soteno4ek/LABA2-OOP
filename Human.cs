@@ -1,24 +1,38 @@
-﻿internal class Human
+using System;
+
+internal class Human
 {
-    string name;
-    int height;
+    private string _name;
+    private int _height;
+
+    public Human(string name, int height)
+    {
+        Name = name;
+        Height = height;
+    }
 
     public string Name
     {
-        get { return name; }
-        set { name = value; }
+        get { return _name; }
+        set
+        {
+            if (!string.IsNullOrWhiteSpace(value))
+                _name = value;
+            else
+                throw new ArgumentException("Имя пустое");
+        }
     }
 
     public int Height
     {
-        get { return height; }
-        set { height = value; }
-    }
-
-    public Human(string name, int height)
-    {
-        this.name = name;
-        this.height = height;
+        get { return _height; }
+        set
+        {
+            if (value > 0)
+                _height = value;
+            else
+                throw new ArgumentException("Рост > 0");
+        }
     }
 
     public override string ToString()
